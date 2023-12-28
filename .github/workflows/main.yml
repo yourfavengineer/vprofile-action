@@ -98,7 +98,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
           cluster-name: ${{ env.EKS_CLUSTER }}
-          chart-path: helm/vprofilecharts
+          chart-path: helm/vprofile-charts
           namespace: default
           values: appimage=${{secrets.REGISTRY}}/${{env.ECR_REPOSITORY}},apptag=${{github.run_number}}
           name: vprofile-stack
